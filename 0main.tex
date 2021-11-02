@@ -22,14 +22,21 @@
 %%%%%%%%%%%%%%%%%%  header  (packages, 
 \input{header}
 
+\title{ECCE Note Template}
+\input{authorlist}
+
 \begin{document}
 \linenumbers
-%\frontmatter
+
 \pagestyle{empty}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% title page
 \include{title_page}
 
+\maketitle
+\begin{abstract}
+ \input{abstract}
+\end{abstract}
 %\cleardoublepage
 %\pagestyle{fancy}
 
@@ -52,11 +59,11 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 2 Detector Overview
 \section {Detector Overview}
 \label{det_overview}
-\include{det_overview}
+\input{det_overview}
 
 \section {Section 2}
 \label{section2}
-\include{section2}
+\input{section2}
 
 \listoftodos[To Do]
 
